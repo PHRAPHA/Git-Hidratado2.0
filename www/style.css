@@ -1,0 +1,10 @@
+.icons img{
+	width: 100%;
+	/*OLOCO MEU HUHEUHEUHEUHEUEHUEHUE*/
+	-webkit-filter: grayscale(100%);
+	/*OLOCO MEU HUHEUHEUHEUHEUEHUEHUE*/
+}
+
+.icons img:hover{
+filter:none;
+}
