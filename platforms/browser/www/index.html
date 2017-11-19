@@ -167,7 +167,12 @@
 			var copos = 0;
         	$("#btnAddCopo").click(function() {
 	  			$(".cups").append( '<img src="img/agua.png">' );
+	  			copos++;
 			});
+
+			if(copos>=8){
+				$(".cups").append( '<img class="foto-user" src="img/semidesidratado.png" width="100px" height="100px"> <p id="status">Parábens, Usuário! Você está Hidratado! Continue sempre<br> bebendo água para se manter saudável!</p>');	
+			};
         </script>
 
     </body>
