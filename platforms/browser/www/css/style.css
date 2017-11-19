@@ -1,7 +1,10 @@
 #status{
 	display: inline-block;
+	position: relative;
+	bottom: 2.1em;
 }
 
 .user-status{
 	display: inline-block;
+	width: 60em;
 }
