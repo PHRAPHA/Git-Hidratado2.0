@@ -33,15 +33,17 @@
 								<img src="img/agua.png">
 								<img src="img/agua.png">
 								<img src="img/agua.png">
-								<img src="img/agua.png">
-								<br><br>
-								<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-plus zmd-1x"></i> ADICIONAR COPO </button>
+								<img src="img/agua.png">	
 							</div>
+						</div>
+					</div>
+
+					<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-plus zmd-1x"></i> ADICIONAR COPO </button>
 
 
 <br><br><br>
 							<div class="user-status">
-								<img class="foto-user" src="img/feliz.png" width="100px" height="100px">
+								<img class="foto-user" src="img/semidesidratado.png" width="100px" height="100px">
 								<p id="status">Parábens, Usuário! Você está Hidratado! Continue sempre<br> bebendo água 
 								para se manter saudável!</p>
 							</div>
@@ -160,5 +162,16 @@
 		<script src="/nd2settings.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript">
+        	//Adicionando Copos na Div
+			var copos = 0;
+        	$("#btnAddCopo").click(function() {
+	  			$(".cups").append( '<img src="img/agua.png">' );
+	  			copos++;
+			});
+
+			if(copos>=8)
+        </script>
+
     </body>
 </html>
