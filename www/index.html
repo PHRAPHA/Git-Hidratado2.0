@@ -3,11 +3,11 @@
 <html>
     <head>
 		<title>Conquistas</title>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
-		<link rel="stylesheet" href="/vendor/waves/waves.min.css" />
-		<link rel="stylesheet" href="/vendor/wow/animate.css" />
-		<link rel="stylesheet" href="/css/nativedroid2.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,20 +32,17 @@
 							<div class="cups">
 								<img src="img/agua.png">
 								<img src="img/agua.png">
-								<img src="img/agua.png">
-								<img src="img/agua.png">	
 							</div>
 						</div>
 					</div>
 
-					<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-plus zmd-1x"></i> ADICIONAR COPO </button>
+					<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-plus zmd-4x"></i> ADICIONAR COPO </button>
 
 
 <br><br><br>
 							<div class="user-status">
-								<img class="foto-user" src="img/semidesidratado.png" width="100px" height="100px">
-								<p id="status">Parábens, Usuário! Você está Hidratado! Continue sempre<br> bebendo água 
-								para se manter saudável!</p>
+								<img id="user-foto"> <!--Aqui vem a foto status do user via js -->
+								<p id="status">Coloque quantas águas você tomou para saber como está seu corpo!</p>
 							</div>
 						</div>
 					</div>
@@ -162,18 +159,14 @@
 		<script src="/nd2settings.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/controller.js"></script>
-        <script type="text/javascript">
-        	//Adicionando Copos na Div
-			var copos = 0;
-        	$("#btnAddCopo").click(function() {
-	  			$(".cups").append( '<img src="img/agua.png">' );
-	  			copos++;
-			});
 
-			if(copos>=8){
-				$(".cups").append( '<img class="foto-user" src="img/semidesidratado.png" width="100px" height="100px"> <p id="status">Parábens, Usuário! Você está Hidratado! Continue sempre<br> bebendo água para se manter saudável!</p>');	
-			};
-        </script>
-
+	    <script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>

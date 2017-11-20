@@ -8,3 +8,16 @@
 	display: inline-block;
 	width: 60em;
 }
+
+
+.cups{
+	background-color: #f0f;
+	position: relative;
+	left:4em;
+	max-width: 15em;
+}
+
+#btnAddCopo{
+	position: relative;
+	left:3.5em;
+}
