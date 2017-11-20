@@ -17,6 +17,7 @@ document.addEventListener("deviceready", function(){
 		};
 
 		//Semidesidratado
+<<<<<<< HEAD
 		if (copos > 2 && copos <= 4) {
 			$("#user-foto").attr("src", "img/semidesidratado.png");
 			$("#status").html("Você está quase semidesidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
@@ -26,6 +27,17 @@ document.addEventListener("deviceready", function(){
 		if (copos > 4 && copos <= 7) {
 			$("#user-foto").attr("src", "img/semihidratado.png");
 			$("#status").html("Você está quase hidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
+=======
+		if(copos>2 && copos<=4){
+			$( "#user-foto").attr( "src", "img/semidesidratado.png" );
+			$("#status").html("Você está quase desidratado, você precisa de mais água do que isso!");
+		};
+
+		//Semihidratado
+		if(copos>4 && copos<=7){
+			$( "#user-foto").attr( "src", "img/semihidratado.png" );
+			$("#status").html("Mais alguns copos e seu corpo vai trabalhar muito melhor, Por que não bebe mais um pouco de água?");
+>>>>>>> master
 		};
 
 		//Hidratado
