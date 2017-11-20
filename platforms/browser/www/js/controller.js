@@ -14,10 +14,6 @@
 	//Adicionando Copos na Div
 	var copos = 0;
 	var contador=0;
-	$("#btnAddCopo").click(function() {
-		$(".cups").append( '<img class="copo" src="img/agua.png">');
-		
-		copos++;
 
 	//BOTAO QUE O USUARIO CLICA PRA ADICIONAR COPO
 	$("#btnAddCopo").click(function () {
