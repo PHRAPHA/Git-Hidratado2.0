@@ -1,6 +1,4 @@
 	$(document).ready(function() {
-<<<<<<< HEAD
-=======
 
 		function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
@@ -11,24 +9,15 @@
 	    function onDeviceReady() {
 	        // Now safe to use device APIs
 	    }
->>>>>>> master
   
 
 	//Adicionando Copos na Div
 	var copos = 0;
 	var contador=0;
 	$("#btnAddCopo").click(function() {
-<<<<<<< HEAD
-		$(".cups").append( '<img src="img/agua.png">');
-			
-		contador++;
-		console.log(contador);
-		copos = contador;
-=======
 		$(".cups").append( '<img class="copo" src="img/agua.png">');
 		
 		copos++;
->>>>>>> master
 
 
 		//Desidratado
@@ -53,17 +42,6 @@
 		//Hidratado
 		if(copos>7){
 			$( "#user-foto").attr( "src", "img/hidratado.png" );
-<<<<<<< HEAD
-			$("#status").html("Você está hidratado!, isso que é vida saudável!");
-		};
-
-//Para Achievements
-
-//Nao adiciona 
-		if(copos>=0){
-			$("#gota1").addClass("block");
-			};
-=======
 			$("#status").html("Você está hidratado! Isso que é vida saudável!");
 		};
 
@@ -97,20 +75,14 @@
 			$( "#user-foto").attr( "src", "img/hidratado.png" );
 			$("#status").html("Você está hidratado!, isso que é vida saudável!");
 		};
->>>>>>> master
 	});
 
 	console.log(copos);
 
 
 	
-<<<<<<< HEAD
-	
-	//Para user Status
-=======
 
 
 //vai dar certo
->>>>>>> master
 
 	});

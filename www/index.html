@@ -1,19 +1,20 @@
-<!-- resolver indentação pelo amor de deus -->
+<!-- resolver identação pelo amor de deus -->
 <!DOCTYPE html>
 <html>
+
     <head>
 		<title>Conquistas</title>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
-		<link rel="stylesheet" href="/vendor/waves/waves.min.css" />
-		<link rel="stylesheet" href="/vendor/wow/animate.css" />
-		<link rel="stylesheet" href="/css/nativedroid2.css" />
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	</head>
-	<body>
+	<body onload="onLoad()"> 
 		<div data-role="page">
 			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
 				<h1 class="wow fadeIn" data-wow-delay='0.4s'>HIDRATADO</h1>
@@ -30,6 +31,7 @@
 					<div class="row">
 						<div id="container-copos">
 							<div class="cups">
+<<<<<<< HEAD
 						
 							</div>
 						</div>
@@ -67,47 +69,45 @@
 							</div>
 						</div>
 						<!--Primeira Gota!-->
+=======
+>>>>>>> master
 						
-						<!--Precisão-->
-						<div data-role="popup" id="popupprecisao">
-							<div data-role="header">
-								<h3 class='nd-title'>Precisão</h3>
-							</div>
-							
-							<div data-role="content">
-								<img src="/img/iconclock.png">
-								
-								<p>Você se manteve hidratado o dia inteiro!</p>
 							</div>
 						</div>
-						<!--Precisão-->
-						
-						<!--Garrafa-->
-						<div data-role="popup" id="popupgarrafa">
-							<div data-role="header">
-								<h3 class='nd-title'>Garrafa</h3>
+					</div>
+
+					<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button">ADICIONAR COPO </button>
+					<button id="btnRemCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button">Remover Copo </button>
+
+
+<br><br><br>
+							<div class="user-status">
+								<img id="user-foto"> <!--Aqui vem a foto status do user via js -->
+								<p id="status">Coloque quantas águas você tomou para saber como está seu corpo! Se você não tomou água hoje, vá pegar um copo agora!</p>
 							</div>
-							
-							<div data-role="content">
-								<img src="/img/iconbottle.png">
-								
-								<p>Você já bebeu 2 litros de água!</p>
-							</div>
+
+				</div>
+			</div>
+		</div>
+					
+
+			<!-- Tela João Pedro -->
+			<div data-role="nd2tab" data-tab="conquistas">
+				<div role="main" class="ui-content" data-inset="false">
+					<h3>Suas conquistas</h3>
+					<!--Popup-->
+					<!--Primeira Gota!-->
+					<div data-role="popup" id="popup1gota">
+						<div data-role="header">
+							<h3 class='nd-title'>Primeira Gota!</h3>
 						</div>
-						<!--Garrafa-->
-						
-						<!--Balde-->
-						<div data-role="popup" id="popupbalde">
-							<div data-role="header">
-								<h3 class='nd-title'>Balde d'água</h3>
-							</div>
-							
-							<div data-role="content">
-								<img src="/img/iconbalde.png">
-								
-								<p>Você já bebeu 8 litros de água!</p>
-							</div>
+
+						<div data-role="content">
+							<img src="img/icongota.png">
+
+							<p>Você bebeu seu primeiro copo d'água!</p>
 						</div>
+<<<<<<< HEAD
 						<!--Balde-->
 
 						<!--Galao-->
@@ -160,22 +160,108 @@
 								<a href="#popupgalao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="/img/icongalao.png" id="galao"></a>
 							</div>
 
-						</div>
-						<!--Conquistas-->
-						
+=======
+
 					</div>
-					
+					<!--Primeira Gota!-->
+
+					<!--Precisão-->
+					<div data-role="popup" id="popupprecisao">
+						<div data-role="header">
+							<h3 class='nd-title'>Precisão</h3>
+						</div>
+
+						<div data-role="content">
+							<img src="img/iconclock.png">
+
+							<p>Você se manteve hidratado o dia inteiro!</p>
+>>>>>>> master
+						</div>
+					</div>
+					<!--Precisão-->
+
+					<!--Garrafa-->
+					<div data-role="popup" id="popupgarrafa">
+						<div data-role="header">
+							<h3 class='nd-title'>Garrafa</h3>
+
+						</div>
+
+						<div data-role="content">
+							<img src="img/iconbottle.png">
+
+							<p>Você já bebeu 2 litros de água!</p>
+						</div>
+					</div>
+					<!--Garrafa-->
+
+					<!--Balde-->
+					<div data-role="popup" id="popupbalde">
+						<div data-role="header">
+							<h3 class='nd-title'>Balde d'água</h3>
+						</div>
+
+						<div data-role="content">
+							<img src="img/iconbalde.png">
+
+							<p>Você já bebeu 8 litros de água!</p>
+						</div>
+					</div>
+					<!--Balde-->
+
+					<!--Popup-->
+
+					<!--Conquistas-->
+
+					<div class="row icons">
+						<div class="col-xs-2">
+
+							<a href="#popup1gota" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+								<img src="/img/icongota.png" id="1gota">
+							</a>
+						</div>
+						<div class="col-xs-2">
+
+							<a href="#popupprecisao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+								<img src="/img/iconclock.png" id="precisao">
+							</a>
+						</div>
+						<div class="col-xs-2">
+
+							<a href="#popupgarrafa" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+								<img src="/img/iconbottle.png" id="garrafa">
+							</a>
+						</div>
+
+						<div class="col-xs-2">
+
+							<a href="#popupbalde" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+								<img src="/img/iconbalde.png" id="balde">
+							</a>
+						</div>
+
+					</div>
+					<!--Conquistas-->
+
 				</div>
-				<!-- Fim da Tela João Pedro -->
-				<!-- Tela Isabela -->
-				<div data-role="nd2tab" data-tab="perfil">
-					<p>Aqui vem o perfil</p>
-					
-				</div>
-				<!-- Fim da Tela Isabela -->
+
 			</div>
+<<<<<<< HEAD
 		</div>
 		<script src="js/jquery.min.js"></script>
+=======
+			<!-- Fim da Tela João Pedro -->
+			<!-- Tela Isabela -->
+			<div data-role="nd2tab" data-tab="perfil">
+				<p>Aqui vem o perfil</p>
+
+			</div>
+			<!-- Fim da Tela Isabela -->
+		  </div>
+
+
+		    <script src="js/jquery.min.js"></script>
+>>>>>>> master
 			<script src="js/jquery-ui.min.js"></script>
 			<script src="js/jquery.mobile.min.js"></script>
 			<script src="vendor/waves/waves.min.js"></script>
@@ -187,3 +273,4 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
     </body>
 </html>
+
