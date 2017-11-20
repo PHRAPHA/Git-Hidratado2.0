@@ -83,7 +83,6 @@
 	
 
 
-
-	//Para user Status
+//vai dar certo
 
 	});
