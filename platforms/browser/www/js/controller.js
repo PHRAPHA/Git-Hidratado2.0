@@ -14,7 +14,6 @@ $(document).ready(function() {
 	//Adicionando Copos na Div
 	var copos = 0;
 	var contador=0;
-<<<<<<< HEAD
 	$("#btnAddCopo").click(function() {
 	$(".cups").append( '<img class="copo" src="img/agua.png">');
 	
@@ -25,20 +24,6 @@ $(document).ready(function() {
 	if(copos>=0 && copos<=2){
 		$( "#user-foto").attr( "src", "img/desidratado.png" );
 		$("#status").html("Você está desidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
-=======
-
-	//BOTAO QUE O USUARIO CLICA PRA ADICIONAR COPO
-	$("#btnAddCopo").click(function() {
-		$(".cups").append( '<img class="copo" src="img/agua.png">');
-		
-		copos++;
-
-
-		//Desidratado
-		if (copos >= 0 && copos <= 2) {
-			$("#user-foto").attr("src", "img/desidratado.png");
-			$("#status").html("Você está desidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
->>>>>>> 75049fa4f48c9b136f44c9620d39a77b1a781475
 		};
 
 
