@@ -4,6 +4,7 @@
 	bottom: 2.1em;
 	max-width:15em;
 	margin: 10px;
+	width: 60em;
 }
 
 .user-status{
@@ -23,7 +24,7 @@
 	margin-top: 50px;
 	position: relative;
 	left:4em;
-	max-width:20em;
+	max-width:25em;
 }
 
 #btnAddCopo{
@@ -31,4 +32,17 @@
 	left:3.5em;
 	margin-top: 30px;
 	margin-bottom: 40px;
+}
+
+#btnRemCopo{
+	position: relative;
+	left:5.5em;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.copo{
+	margin: 1em 1em;
+	width: 50px;
+	height: auto;
 }
