@@ -1,4 +1,4 @@
-#status{
+#status {
 	display: inline-block;
 	position: relative;
 	bottom: 2.1em;
@@ -7,18 +7,17 @@
 	width: 60em;
 }
 
-.user-status{
+.user-status {
 	display: inline-block;
 	width: 60em;
 	position: relative;
-	left:4em;
+	left: 4em;
 }
 
 #user-foto{
 	width: 100px;
 	height: 100px;
 }
-
 
 .cups{
 	margin-top: 50px;
@@ -27,7 +26,7 @@
 	max-width:25em;
 }
 
-#btnAddCopo{
+#btnAddCopo {
 	position: relative;
 	left:3.5em;
 	margin-top: 30px;

@@ -19,24 +19,28 @@
 		
 		copos++;
 
+	//BOTAO QUE O USUARIO CLICA PRA ADICIONAR COPO
+	$("#btnAddCopo").click(function () {
+		$(".cups").append('<img src="img/agua.png">');
+
+		copos++;
 
 		//Desidratado
-		if(copos>=0 && copos<=2){
-				$( "#user-foto").attr( "src", "img/desidratado.png" );
-				$("#status").html("Você está desidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
-			};
-
+		if (copos >= 0 && copos <= 2) {
+			$("#user-foto").attr("src", "img/desidratado.png");
+			$("#status").html("Você está desidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
+		};
 
 		//Semidesidratado
-		if(copos>2 && copos<=4){
-			$( "#user-foto").attr( "src", "img/semidesidratado.png" );
-			$("#status").html("Você está quase desidratado, você precisa de mais água do que isso!");
+		if (copos > 2 && copos <= 4) {
+			$("#user-foto").attr("src", "img/semidesidratado.png");
+			$("#status").html("Você está quase semidesidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
 		};
 
 		//Semihidratado
-		if(copos>4 && copos<=7){
-			$( "#user-foto").attr( "src", "img/semihidratado.png" );
-			$("#status").html("Mais alguns copos e seu corpo vai trabalhar muito melhor, Por que não bebe mais um pouco de água?");
+		if (copos > 4 && copos <= 7) {
+			$("#user-foto").attr("src", "img/semihidratado.png");
+			$("#status").html("Você está quase hidratado, tome alguns copos de água para seu corpo funcionar corretamente!");
 		};
 
 		//Hidratado
@@ -80,9 +84,32 @@
 	console.log(copos);
 
 
-	
+		//IFS DA TELA TRES!! :)
+		//Desidratado
+		if (copos >= 0 && copos <= 3) {
+			$("#texto-sangue").html("Seu volume sanguíneo está reduzido e a pressão sanguínea pode cair. A falta de água também prejudica o transporte de nutrientes para outros órgãos.");
+			$("#texto-cerebro").html("Seu cérebro está mais cansado. A falta de água torna mais difícil pensar, podendo causar uma sensação de cansaço e dores de cabeça.");
+			$("#texto-rim").html("Seu rim está recebendo menos oxigênio e causando lesões em suas células. Há mais chances de desenvolver pedras nos rins e infecções urinárias.");
+			$("#texto-estomago").html("O estômago e o intestino têm dificuldade em digerir os alimentos e eliminar as toxinas, o que pode causar refluxo, azia e prisão de ventre.");
+		};
 
+		//Semidesidratado
+		if (copos >= 4 && copos <= 7) {
+			$("#texto-sangue").html("Com essa quantidade de água, seu sangue está fluindo melhor do que antes. Ainda assim, a falta de água continua a prejudicar o desempenho do seu organismo.");
+			$("#texto-cerebro").html("Seu cérebro ainda está sobrecarregado, pois a falta de água compromete a passagem de nutrientes necessários para seu bom funcionamento.");
+			$("#texto-rim").html("Seus rins tem dificuldade em filtrar o sangue. Isso causa consequências para órgãos como a pele, que pode desenvolver espinhas.");
+			$("#texto-estomago").html("Com pouca água, seu corpo não é capaz de produzir o suco gástrico e as enzimas digestivas, o que pode deixar seu intestino lento.");
+		};
 
-//vai dar certo
+		//Hidratado
+		if (copos > 7) {
+			$("#texto-sangue").html("Seu sangue aumentou de volume e agora flui com mais facilidade pelo seu corpo, transportando com facilidade os nutrientes para todos os órgãos e deixando você mais disposto.");
+			$("#texto-cerebro").html("Com a melhora no transporte de nutrientes, seu cérebro se torna mais ágil e sua memória e o seu sono melhoram.");
+			$("#texto-rim").html("Seus rins são capazes de filtrar seu sangue sem ficarem sobrecarregados. Além disso, não há concentração de toxinas, o que impede o desenvolvimento de bactérias.");
+			$("#texto-estomago").html("Seu órgãos digestores agora possuem uma melhor capacidade de digerir alimentos e absorver nutrientes necessários para abastecer seu sangue.");
+		};
 
 	});
+
+	console.log(copos);
+});
