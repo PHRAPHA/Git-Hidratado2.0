@@ -7,6 +7,8 @@
 .user-status{
 	display: inline-block;
 	width: 60em;
+	position: relative;
+	left:4em;
 }
 
 
@@ -14,10 +16,11 @@
 	background-color: #f0f;
 	position: relative;
 	left:4em;
-	max-width: 15em;
+	max-width:20em;
 }
 
 #btnAddCopo{
 	position: relative;
 	left:3.5em;
+
 }
