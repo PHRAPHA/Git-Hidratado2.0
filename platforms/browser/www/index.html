@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Conquistas</title>
+	<title>Hidratado</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/jquery.mobile.min.css" />
 	<link rel="stylesheet" href="vendor/waves/waves.min.css" />
@@ -18,7 +18,7 @@
 <body>
 	<div data-role="page">
 		<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-			<h1 class="wow fadeIn" data-wow-delay='0.4s'>HIDRATADO</h1>
+			<h1 class="wow fadeIn" data-wow-delay='0.4s'>Hidratado</h1>
 			<!--Menu -->
 			<ul data-role="nd2tabs" data-swipe="true">
 				<li data-tab="copos">Copos</li>
@@ -48,128 +48,173 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
 
-	<!-- Tela João Pedro -->
-	<div data-role="nd2tab" data-tab="conquistas">
-		<div role="main" class="ui-content" data-inset="false">
-			<h3>Suas conquistas</h3>
-			<!--Popup-->
-			<!--Primeira Gota!-->
-			<div data-role="popup" id="popup1gota">
-				<div data-role="header">
-					<h3 class='nd-title'>Primeira Gota!</h3>
+		<!-- Tela João Pedro -->
+		<div data-role="nd2tab" data-tab="conquistas">
+			<div role="main" class="ui-content" data-inset="false">
+				<h3>Suas conquistas</h3>
+				<!--Popup-->
+				<!--Primeira Gota!-->
+				<div data-role="popup" id="popup1gota">
+					<div data-role="header">
+						<h3 class='nd-title'>Primeira Gota!</h3>
+					</div>
+
+					<div data-role="content">
+						<img src="img/icongota.png">
+
+						<p>Você bebeu seu primeiro copo d'água!</p>
+					</div>
 				</div>
+				<!--Primeira Gota!-->
 
-				<div data-role="content">
-					<img src="img/icongota.png">
+				<!--Precisão-->
+				<div data-role="popup" id="popupprecisao">
+					<div data-role="header">
+						<h3 class='nd-title'>Precisão</h3>
+					</div>
 
-					<p>Você bebeu seu primeiro copo d'água!</p>
+					<div data-role="content">
+						<img src="img/iconclock.png">
+
+						<p>Você se manteve hidratado o dia inteiro!</p>
+					</div>
 				</div>
-			</div>
-			<!--Primeira Gota!-->
+				<!--Precisão-->
 
-			<!--Precisão-->
-			<div data-role="popup" id="popupprecisao">
-				<div data-role="header">
-					<h3 class='nd-title'>Precisão</h3>
+				<!--Garrafa-->
+				<div data-role="popup" id="popupgarrafa">
+					<div data-role="header">
+						<h3 class='nd-title'>Garrafa</h3>
+					</div>
+
+					<div data-role="content">
+						<img src="img/iconbottle.png">
+
+						<p>Você já bebeu 2 litros de água!</p>
+					</div>
 				</div>
+				<!--Garrafa-->
 
-				<div data-role="content">
-					<img src="img/iconclock.png">
+				<!--Balde-->
+				<div data-role="popup" id="popupbalde">
+					<div data-role="header">
+						<h3 class='nd-title'>Balde d'água</h3>
+					</div>
 
-					<p>Você se manteve hidratado o dia inteiro!</p>
+					<div data-role="content">
+						<img src="img/iconbalde.png">
+
+						<p>Você já bebeu 8 litros de água!</p>
+					</div>
 				</div>
-			</div>
-			<!--Precisão-->
+				<!--Balde-->
 
-			<!--Garrafa-->
-			<div data-role="popup" id="popupgarrafa">
-				<div data-role="header">
-					<h3 class='nd-title'>Garrafa</h3>
-				</div>
+				<!--Popup-->
 
-				<div data-role="content">
-					<img src="img/iconbottle.png">
+				<!--Conquistas-->
 
-					<p>Você já bebeu 2 litros de água!</p>
-				</div>
-			</div>
-			<!--Garrafa-->
+				<div class="row icons">
+					<div class="col-xs-2">
 
-			<!--Balde-->
-			<div data-role="popup" id="popupbalde">
-				<div data-role="header">
-					<h3 class='nd-title'>Balde d'água</h3>
-				</div>
-
-				<div data-role="content">
-					<img src="img/iconbalde.png">
-
-					<p>Você já bebeu 8 litros de água!</p>
-				</div>
-			</div>
-			<!--Balde-->
-
-			<!--Popup-->
-
-			<!--Conquistas-->
-
-			<div class="row icons">
-				<div class="col-xs-2">
-
-					<a href="#popup1gota" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+						<a href="#popup1gota" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
 								<img src="/img/icongota.png" id="1gota">
 							</a>
-				</div>
-				<div class="col-xs-2">
+					</div>
+					<div class="col-xs-2">
 
-					<a href="#popupprecisao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+						<a href="#popupprecisao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
 								<img src="/img/iconclock.png" id="precisao">
 							</a>
-				</div>
-				<div class="col-xs-2">
+					</div>
+					<div class="col-xs-2">
 
-					<a href="#popupgarrafa" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+						<a href="#popupgarrafa" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
 								<img src="/img/iconbottle.png" id="garrafa">
 							</a>
-				</div>
+					</div>
 
-				<div class="col-xs-2">
+					<div class="col-xs-2">
 
-					<a href="#popupbalde" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+						<a href="#popupbalde" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
 								<img src="/img/iconbalde.png" id="balde">
 							</a>
+					</div>
+
+				</div>
+				<!--Conquistas-->
+
+			</div>
+
+		</div>
+		<!-- Fim da Tela João Pedro -->
+
+		<!-- tela isa -->
+
+		<div data-role="nd2tab" data-tab="perfil">
+			<!--card 1-->
+			<div class="nd2-card">
+				<div class="card-title has-supporting-text">
+					<h3 class="card-primary-title">Sangue</h3>
 				</div>
 
+				<div class="card-supporting-text has-action has-title">
+					<p id="texto-sangue"></p>
+				</div>
 			</div>
-			<!--Conquistas-->
+			<!--fim do card 1-->
 
-		</div>
 
-	</div>
-	<!-- Fim da Tela João Pedro -->
-	<!-- Tela Isabela -->
-	<div data-role="nd2tab" data-tab="perfil">
-		<div class="nd2-card">
+			<!--card 2-->
+			<div class="nd2-card">
+				<div class="card-title has-supporting-text">
+					<h3 class="card-primary-title">Cérebro</h3>
+				</div>
 
-			<div class="card-title has-supporting-text">
-				<h3 class="card-primary-title">Sangue</h3>
+				<div class="card-supporting-text has-action has-title">
+					há dificuldade em digerir os alimentos e eliminar as toxinas.
+				</div>
 			</div>
+			<!--fim do card 2-->
 
-			<div class="card-supporting-text has-action has-title" id="texto-sangue"></div>
-			<!-- Fim da Tela Isabela -->
+			<!--card 3-->
+			<div class="nd2-card">
+				<div class="card-title has-supporting-text">
+					<h3 class="card-primary-title">Rim</h3>
+				</div>
+
+				<div class="card-supporting-text has-action has-title">
+					há dificuldade em digerir os alimentos e eliminar as toxinas.
+				</div>
+			</div>
+				<!--fim do card 3-->
+
+			<!--card 4-->
+			<div class="nd2-card">
+				<div class="card-title has-supporting-text">
+					<h3 class="card-primary-title">Estômago</h3>
+				</div>
+
+				<div class="card-supporting-text has-action has-title">
+						há dificuldade em digerir os alimentos e eliminar as toxinas.
+				</div>
+			</div>
+			<!--fim do card 4-->
 		</div>
+		<!--fim da tela isa-->
+
+	<!--fim do data role page-->
 	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/jquery.mobile.min.js"></script>
-	<script src="vendor/waves/waves.min.js"></script>
-	<script src="vendor/wow/wow.min.js"></script>
-	<script src="js/nativedroid2.js"></script>
-	<script src="nd2settings.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+<script src="vendor/waves/waves.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="js/nativedroid2.js"></script>
+<script src="nd2settings.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
 </body>
 
 </html>
