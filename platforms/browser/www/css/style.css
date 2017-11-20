@@ -13,10 +13,6 @@
 	left: 4em;
 }
 
-<<<<<<< HEAD
-.cups {
-	background-color: #f0f;
-=======
 #user-foto{
 	width: 100px;
 	height: 100px;
@@ -25,7 +21,6 @@
 
 .cups{
 	margin-top: 50px;
->>>>>>> master
 	position: relative;
 	left: 4em;
 	max-width: 20em;
@@ -33,16 +28,7 @@
 
 #btnAddCopo {
 	position: relative;
-<<<<<<< HEAD
-	left: 3.5em;
-}
-
-#title-cards {
-	position: relative;
-	left: 4em;
-=======
 	left:3.5em;
 	margin-top: 30px;
 	margin-bottom: 40px;
->>>>>>> master
 }
