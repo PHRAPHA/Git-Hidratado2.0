@@ -2,6 +2,8 @@
 	display: inline-block;
 	position: relative;
 	bottom: 2.1em;
+	max-width:15em;
+	margin: 10px;
 }
 
 .user-status{
@@ -11,9 +13,14 @@
 	left:4em;
 }
 
+#user-foto{
+	width: 100px;
+	height: 100px;
+}
+
 
 .cups{
-	background-color: #f0f;
+	margin-top: 50px;
 	position: relative;
 	left:4em;
 	max-width:20em;
@@ -22,5 +29,6 @@
 #btnAddCopo{
 	position: relative;
 	left:3.5em;
-
+	margin-top: 30px;
+	margin-bottom: 40px;
 }
