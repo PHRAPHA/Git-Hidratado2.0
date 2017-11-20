@@ -16,10 +16,11 @@
 	var contador=0;
 
 	//BOTAO QUE O USUARIO CLICA PRA ADICIONAR COPO
-	$("#btnAddCopo").click(function () {
-		$(".cups").append('<img src="img/agua.png">');
-
+	$("#btnAddCopo").click(function() {
+		$(".cups").append( '<img class="copo" src="img/agua.png">');
+		
 		copos++;
+
 
 		//Desidratado
 		if (copos >= 0 && copos <= 2) {
