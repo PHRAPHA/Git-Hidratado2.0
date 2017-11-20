@@ -1,55 +1,6 @@
-<!-- resolver identação pelo amor de deus -->
 <!DOCTYPE html>
 <html>
 
-<<<<<<< HEAD
-<head>
-	<title>Hidratado</title>
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/jquery.mobile.min.css" />
-	<link rel="stylesheet" href="vendor/waves/waves.min.css" />
-	<link rel="stylesheet" href="vendor/wow/animate.css" />
-	<link rel="stylesheet" href="css/nativedroid2.css" />
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-</head>
-
-<body>
-	<div data-role="page">
-		<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-			<h1 class="wow fadeIn" data-wow-delay='0.4s'>Hidratado</h1>
-			<!--Menu -->
-			<ul data-role="nd2tabs" data-swipe="true">
-				<li data-tab="copos">Copos</li>
-				<li data-tab="conquistas">Conquistas</li>
-				<li data-tab="perfil" data-tab-active="true">Perfil</li>
-			</ul>
-		</div>
-		<div role="main" class="ui-content" data-inset="false">
-			<div data-role="nd2tab" data-tab="copos">
-
-				<div class="row">
-					<div id="container-copos">
-						<div class="cups">
-							<img src="img/agua.png">
-							<img src="img/agua.png">
-						</div>
-					</div>
-				</div>
-
-				<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button">ADICIONAR COPO</button>
-
-				<br><br><br>
-				<div class="user-status">
-					<img id="user-foto">
-					<!--Aqui vem a foto status do user via js -->
-					<p id="status">Coloque quantas águas você tomou para saber como está seu corpo!</p>
-				</div>
-			</div>
-		</div>
-=======
     <head>
 		<title>Conquistas</title>
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -62,15 +13,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	</head>
+
 	<body>
 		<div data-role="page">
 			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>HIDRATADO</h1>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Hidratado</h1>
 				<!--Menu -->
 				<ul data-role="nd2tabs" data-swipe="true">
-					<li data-tab="copos" data-tab-active="true">Copos</li>
+					<li data-tab="copos">Copos</li>
 					<li data-tab="conquistas">Conquistas</li>
-					<li data-tab="perfil">Perfil</li>
+					<li data-tab="perfil" data-tab-active="true">Perfil</li>
 				</ul>
 			</div>
 			<div role="main" class="ui-content" data-inset="false">
@@ -87,7 +39,6 @@
 
 					<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-plus zmd-4x"></i> ADICIONAR COPO </button>
 
->>>>>>> master
 
 <br><br><br>
 							<div class="user-status">
@@ -97,7 +48,7 @@
 
 				</div>
 			</div>
-		</div>
+		
 					
 
 		<!-- Tela João Pedro -->
@@ -114,13 +65,7 @@
 					<div data-role="content">
 						<img src="img/icongota.png">
 
-<<<<<<< HEAD
 						<p>Você bebeu seu primeiro copo d'água!</p>
-=======
-							<p>Você bebeu seu primeiro copo d'água!</p>
-						</div>
-
->>>>>>> master
 					</div>
 				</div>
 				<!--Primeira Gota!-->
@@ -139,20 +84,12 @@
 				</div>
 				<!--Precisão-->
 
-<<<<<<< HEAD
-				<!--Garrafa-->
-				<div data-role="popup" id="popupgarrafa">
-					<div data-role="header">
-						<h3 class='nd-title'>Garrafa</h3>
-					</div>
-=======
 					<!--Garrafa-->
 					<div data-role="popup" id="popupgarrafa">
 						<div data-role="header">
 							<h3 class='nd-title'>Garrafa</h3>
 
 						</div>
->>>>>>> master
 
 					<div data-role="content">
 						<img src="img/iconbottle.png">
@@ -224,12 +161,9 @@
 					<h3 class="card-primary-title">Sangue</h3>
 				</div>
 
-				<div class="card-supporting-text has-action has-title">
-					<p id="texto-sangue"></p>
-				</div>
+				<div class="card-supporting-text has-action has-title" id="texto-sangue"></div>
 			</div>
 			<!--fim do card 1-->
-
 
 			<!--card 2-->
 			<div class="nd2-card">
@@ -237,9 +171,7 @@
 					<h3 class="card-primary-title">Cérebro</h3>
 				</div>
 
-				<div class="card-supporting-text has-action has-title">
-					há dificuldade em digerir os alimentos e eliminar as toxinas.
-				</div>
+				<div class="card-supporting-text has-action has-title" id="texto-cerebro"></div>
 			</div>
 			<!--fim do card 2-->
 
@@ -249,11 +181,8 @@
 					<h3 class="card-primary-title">Rim</h3>
 				</div>
 
-				<div class="card-supporting-text has-action has-title">
-					há dificuldade em digerir os alimentos e eliminar as toxinas.
-				</div>
+				<div class="card-supporting-text has-action has-title" id="texto-rim"></div>
 			</div>
-<<<<<<< HEAD
 				<!--fim do card 3-->
 
 			<!--card 4-->
@@ -262,11 +191,10 @@
 					<h3 class="card-primary-title">Estômago</h3>
 				</div>
 
-				<div class="card-supporting-text has-action has-title">
-						há dificuldade em digerir os alimentos e eliminar as toxinas.
-				</div>
+				<div class="card-supporting-text has-action has-title" id="texto-estomago"></div>
 			</div>
 			<!--fim do card 4-->
+
 		</div>
 		<!--fim da tela isa-->
 
@@ -281,25 +209,7 @@
 <script src="js/nativedroid2.js"></script>
 <script src="nd2settings.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
+<script src="js/controller.js"></script>
 </body>
 
 </html>
-=======
-			<!-- Fim da Tela Isabela -->
-		  </div>
-
-
-		    <script src="js/jquery.min.js"></script>
-			<script src="js/jquery-ui.min.js"></script>
-			<script src="js/jquery.mobile.min.js"></script>
-			<script src="vendor/waves/waves.min.js"></script>
-			<script src="vendor/wow/wow.min.js"></script>
-			<script src="js/nativedroid2.js"></script>
-			<script src="nd2settings.js"></script>
-			<script type="text/javascript" src="cordova.js"></script>
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<script type="text/javascript" src="js/controller.js"></script>
-    </body>
-</html>
-
->>>>>>> master
