@@ -1,0 +1,42 @@
+#status{
+	display: inline-block;
+	position: relative;
+	bottom: 2.1em;
+	max-width:15em;
+	margin: 10px;
+}
+
+.user-status{
+	display: inline-block;
+	width: 60em;
+	position: relative;
+	left:4em;
+}
+
+#user-foto{
+	width: 100px;
+	height: 100px;
+}
+
+
+.cups{
+	margin-top: 50px;
+	position: relative;
+	left:4em;
+	max-width:20em;
+}
+
+#btnAddCopo{
+	position: relative;
+	left:3.5em;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.icons img{
+	width: 100%;
+}
+.block{
+	-webkit-filter: grayscale(100%);
+     pointer-events: none;
+}
