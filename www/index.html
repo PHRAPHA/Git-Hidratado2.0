@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-		<title>Conquistas</title>
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
-		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
-		<link rel="stylesheet" href="vendor/wow/animate.css" />
-		<link rel="stylesheet" href="css/nativedroid2.css" />
-		
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	</head>
-	<body onload="onLoad()"> 
-		<div data-role="page">
-			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Hidratado</h1>
-				<!--Menu -->
-				<ul data-role="nd2tabs" data-swipe="true">
-					<li data-tab="copos">Copos</li>
-					<li data-tab="conquistas">Conquistas</li>
-					<li data-tab="perfil" data-tab-active="true">Perfil</li>
-				</ul>
-			</div>
-			<div role="main" class="ui-content" data-inset="false">
-				<div data-role="nd2tab" data-tab="copos">
-					
-					<div class="row">
-						<div id="container-copos">
-							<div class="cups">
-						
+<head>
+	<title>Conquistas</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+	<link rel="stylesheet" href="vendor/wow/animate.css" />
+	<link rel="stylesheet" href="css/nativedroid2.css" />
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
+
+<body onload="onLoad()">
+	<div data-role="page">
+		<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+			<h1 class="wow fadeIn" data-wow-delay='0.4s'>Hidratado</h1>
+			<!--Menu -->
+			<ul data-role="nd2tabs" data-swipe="true">
+				<li data-tab="copos">Copos</li>
+				<li data-tab="conquistas">Conquistas</li>
+				<li data-tab="perfil" data-tab-active="true">Perfil</li>
+			</ul>
+		</div>
+		<div role="main" class="ui-content" data-inset="false">
+			<div data-role="nd2tab" data-tab="copos">
+
+				<div class="nd2-card">
+
+					<div class="card-title has-supporting-text">
+						<h3 class="card-primary-title">Copos</h3>
+					</div>
+
+					<div class="card-supporting-text has-action has-title">
+
+							<div class="cups"></div>
+
+					</div>
+
+					<div class="card-action">
+						<div class="row between-xs">
+							<div class="col-xs-12">
+								<div class="box">
+									<a href="#" id="btnAddCopo" class="ui-btn ui-btn-inline">Adicionar copo</a>
+									<a href="#" id="btnRemCopo" class="ui-btn ui-btn-inline">Remover copo</a>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button">ADICIONAR COPO </button>
-					<button id="btnRemCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button">Remover Copo </button>
-
-
-<br><br><br>
-							<div class="user-status">
-								<img id="user-foto"> <!--Aqui vem a foto status do user via js -->
-								<p id="status">Coloque quantas águas você tomou para saber como está seu corpo! Se você não tomou água hoje, vá pegar um copo agora!</p>
-							</div>
-
 				</div>
-			</div>
-		
-					
 
-		<!-- Tela João Pedro -->
-		<div data-role="nd2tab" data-tab="conquistas">
-			<div role="main" class="ui-content" data-inset="false">
+
+				<br><br><br>
+				<div class="user-status">
+					<img id="user-foto">
+					<!--Aqui vem a foto status do user via js -->
+					<p id="status">Coloque quantas águas você tomou para saber como está seu corpo! Se você não tomou água hoje, vá pegar um copo agora!</p>
+				</div>
+
+			</div>
+
+
+
+
+			<!-- Tela João Pedro -->
+			<div data-role="nd2tab" data-tab="conquistas">
 				<h3>Suas conquistas</h3>
 				<!--Popup-->
 				<!--Primeira Gota!-->
@@ -83,12 +98,12 @@
 				</div>
 				<!--Precisão-->
 
-					<!--Garrafa-->
-					<div data-role="popup" id="popupgarrafa">
-						<div data-role="header">
-							<h3 class='nd-title'>Garrafa</h3>
+				<!--Garrafa-->
+				<div data-role="popup" id="popupgarrafa">
+					<div data-role="header">
+						<h3 class='nd-title'>Garrafa</h3>
 
-						</div>
+					</div>
 
 					<div data-role="content">
 						<img src="img/iconbottle.png">
@@ -147,71 +162,69 @@
 				<!--Conquistas-->
 
 			</div>
+			<!-- Fim da Tela João Pedro -->
 
-		</div>
-		<!-- Fim da Tela João Pedro -->
+			<!-- tela isa -->
 
-		<!-- tela isa -->
+			<div data-role="nd2tab" data-tab="perfil">
 
-		<div data-role="nd2tab" data-tab="perfil">
+				<h6 class="nd2-title" id="title-cards">Saiba como anda seu corpo de acordo com a quantidade de água que você tomou hoje.</h6>
+				<!--card 1-->
+				<div class="nd2-card">
+					<div class="card-title has-supporting-text">
+						<h3 class="card-primary-title">Sangue</h3>
+					</div>
 
-			<h6 class="nd2-title" id="title-cards">Saiba como anda seu corpo de acordo com a quantidade de água que você tomou hoje.</h6>
-			<!--card 1-->
-			<div class="nd2-card">
-				<div class="card-title has-supporting-text">
-					<h3 class="card-primary-title">Sangue</h3>
+					<div class="card-supporting-text has-action has-title" id="texto-sangue"></div>
 				</div>
+				<!--fim do card 1-->
 
-				<div class="card-supporting-text has-action has-title" id="texto-sangue"></div>
-			</div>
-			<!--fim do card 1-->
+				<!--card 2-->
+				<div class="nd2-card">
+					<div class="card-title has-supporting-text">
+						<h3 class="card-primary-title">Cérebro</h3>
+					</div>
 
-			<!--card 2-->
-			<div class="nd2-card">
-				<div class="card-title has-supporting-text">
-					<h3 class="card-primary-title">Cérebro</h3>
+					<div class="card-supporting-text has-action has-title" id="texto-cerebro"></div>
 				</div>
+				<!--fim do card 2-->
 
-				<div class="card-supporting-text has-action has-title" id="texto-cerebro"></div>
-			</div>
-			<!--fim do card 2-->
+				<!--card 3-->
+				<div class="nd2-card">
+					<div class="card-title has-supporting-text">
+						<h3 class="card-primary-title">Rim</h3>
+					</div>
 
-			<!--card 3-->
-			<div class="nd2-card">
-				<div class="card-title has-supporting-text">
-					<h3 class="card-primary-title">Rim</h3>
+					<div class="card-supporting-text has-action has-title" id="texto-rim"></div>
 				</div>
-
-				<div class="card-supporting-text has-action has-title" id="texto-rim"></div>
-			</div>
 				<!--fim do card 3-->
 
-			<!--card 4-->
-			<div class="nd2-card">
-				<div class="card-title has-supporting-text">
-					<h3 class="card-primary-title">Sistema digestório</h3>
+				<!--card 4-->
+				<div class="nd2-card">
+					<div class="card-title has-supporting-text">
+						<h3 class="card-primary-title">Sistema digestório</h3>
+					</div>
+
+					<div class="card-supporting-text has-action has-title" id="texto-estomago"></div>
 				</div>
+				<!--fim do card 4-->
 
-				<div class="card-supporting-text has-action has-title" id="texto-estomago"></div>
 			</div>
-			<!--fim do card 4-->
-
+			<!--fim da tela isa-->
 		</div>
-		<!--fim da tela isa-->
-
-	<!--fim do data role page-->
+		<!--fim do data role page-->
 	</div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/jquery.mobile.min.js"></script>
-<script src="vendor/waves/waves.min.js"></script>
-<script src="vendor/wow/wow.min.js"></script>
-<script src="js/nativedroid2.js"></script>
-<script src="nd2settings.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
-<script src="js/controller.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+	<script src="vendor/waves/waves.min.js"></script>
+	<script src="vendor/wow/wow.min.js"></script>
+	<script src="js/nativedroid2.js"></script>
+	<script src="nd2settings.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="js/controller.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </body>
 
 </html>
