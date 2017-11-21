@@ -45,3 +45,16 @@
 	width: 50px;
 	height: auto;
 }
+
+/*Achievements*/
+.icons img{
+	width: 100%;
+}
+/*bloquear*/
+.block{
+	-webkit-filter: grayscale(100%);
+     pointer-events: none;
+}
+.popup img{
+	align-items: center;
+}

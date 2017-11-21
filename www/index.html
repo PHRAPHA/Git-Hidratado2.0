@@ -3,6 +3,7 @@
 
     <head>
 		<title>Conquistas</title>
+		<link rel="icon" href="img/Icon.png">
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
 		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
@@ -56,98 +57,133 @@
 				<h3>Suas conquistas</h3>
 				<!--Popup-->
 				<!--Primeira Gota!-->
-				<div data-role="popup" id="popup1gota">
+				<div data-role="popup" id="popup1gota" class="popup">
 					<div data-role="header">
 						<h3 class='nd-title'>Primeira Gota!</h3>
 					</div>
-
+					
 					<div data-role="content">
 						<img src="img/icongota.png">
-
+						
 						<p>Você bebeu seu primeiro copo d'água!</p>
 					</div>
 				</div>
 				<!--Primeira Gota!-->
-
-				<!--Precisão-->
-				<div data-role="popup" id="popupprecisao">
+				
+				<!--Piscina-->
+				<div data-role="popup" id="popuppiscina" class="popup">
 					<div data-role="header">
-						<h3 class='nd-title'>Precisão</h3>
+						<h3 class='nd-title'>Piscina</h3>
 					</div>
-
+					
 					<div data-role="content">
-						<img src="img/iconclock.png">
-
-						<p>Você se manteve hidratado o dia inteiro!</p>
+						<img src="img/iconpiscina.png">
+						
+						<p>Você bebeu 1000 Litros! Parabéns!!!!</p>
 					</div>
 				</div>
-				<!--Precisão-->
-
-					<!--Garrafa-->
-					<div data-role="popup" id="popupgarrafa">
-						<div data-role="header">
-							<h3 class='nd-title'>Garrafa</h3>
-
-						</div>
-
+				<!--Piscina-->
+				
+				<!--Garrafa-->
+				<div data-role="popup" id="popupgarrafa" class="popup">
+					<div data-role="header">
+						<h3 class='nd-title'>Garrafa</h3>
+					</div>
+					
 					<div data-role="content">
 						<img src="img/iconbottle.png">
-
+						
 						<p>Você já bebeu 2 litros de água!</p>
 					</div>
 				</div>
 				<!--Garrafa-->
-
+				
 				<!--Balde-->
-				<div data-role="popup" id="popupbalde">
+				<div data-role="popup" id="popupbalde" class="popup">
 					<div data-role="header">
 						<h3 class='nd-title'>Balde d'água</h3>
 					</div>
-
+					
 					<div data-role="content">
 						<img src="img/iconbalde.png">
-
+						
 						<p>Você já bebeu 8 litros de água!</p>
 					</div>
 				</div>
 				<!--Balde-->
 
+				<!--Galao-->
+				<div data-role="popup" id="popupgalao" class="popup">
+					<div data-role="header">
+						<h3 class='nd-title'>Galão d'água</h3>
+					</div>
+					
+					<div data-role="content">
+						<img src="img/icongalao.png">
+						
+						<p>Você já bebeu 20 litros de água!</p>
+					</div>
+				</div>
+				<!--Galao-->
+				<!--Banheira-->
+				<div data-role="popup" id="popubanho" class="popup">
+					<div data-role="header">
+						<h3 class='nd-title'>Banheira</h3>
+					</div>
+					
+					<div data-role="content">
+						<img src="img/iconbanheira.png">
+						
+						<p>Você já bebeu 120 litros de água!</p>
+					</div>
+				</div>
+				<!--Banheira-->
+				
 				<!--Popup-->
-
+				
 				<!--Conquistas-->
-
+				
 				<div class="row icons">
-					<div class="col-xs-2">
 
-						<a href="#popup1gota" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/icongota.png" id="1gota">
-							</a>
-					</div>
-					<div class="col-xs-2">
-
-						<a href="#popupprecisao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/iconclock.png" id="precisao">
-							</a>
-					</div>
-					<div class="col-xs-2">
-
-						<a href="#popupgarrafa" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/iconbottle.png" id="garrafa">
-							</a>
+					<!--Primeira Gota!-->
+					<div class="col-xs-4 block" id="1gota">
+						
+						<a href="#popup1gota" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="img/icongota.png"></a>
 					</div>
 
-					<div class="col-xs-2">
-
-						<a href="#popupbalde" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/iconbalde.png" id="balde">
-							</a>
+					<!--Garrafa-->
+					<div class="col-xs-4 block" id="garrafa">
+						
+						<a href="#popupgarrafa" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="img/iconbottle.png"></a>
 					</div>
 
+					<!--Balde-->							
+					<div class="col-xs-4 block" id="balde">
+						
+						<a href="#popupbalde" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="img/iconbalde.png"></a>
+					</div>
+					
+					<!--Galao-->
+					<div class="col-xs-4 block"  id="galao">
+						
+						<a href="#popupgalao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="img/icongalao.png"></a>
+					</div>
+					<!--Banheira-->
+					<div class="col-xs-4 block"  id="banho">
+						<a href="#popubanho" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="img/iconbanheira.png"></a>
+					</div>
+
+					<!--Piscina-->
+					<div class="col-xs-4 block" id="piscina">
+						
+						<a href="#popuppiscina" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img src="img/iconpiscina.png"></a>
+					</div>
+					
 				</div>
 				<!--Conquistas-->
-
+				
 			</div>
-
+			
 		</div>
 		<!-- Fim da Tela João Pedro -->
 
