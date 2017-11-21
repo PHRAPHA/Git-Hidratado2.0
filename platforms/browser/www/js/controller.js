@@ -190,7 +190,29 @@ $(document).ready(function() {
 	
 	//Formatação didatica separada, contador a parte
 
-	
+	//If's tela 2!!!1!
+	//Mudar classes 
+	$("#btnAddCopo").click(function() {
+			
+			if(copos>=1){
+			$("#1gota").removeClass("block");
+			};
+			if(copos>=5){
+			$("#garrafa").removeClass("block");
+			};
+			if(copos>=10){
+			$("#balde").removeClass("block");
+			};
+			if(copos>=15){
+			$("#galao").removeClass("block");
+			};
+			if(copos>=20){
+			$("#banho").removeClass("block");
+			};
+			if(copos>=30){
+			$("#piscina").removeClass("block");
+			};
+		});
 
 
 	

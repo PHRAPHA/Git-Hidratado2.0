@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-		<title>Conquistas</title>
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
-		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
-		<link rel="stylesheet" href="vendor/wow/animate.css" />
-		<link rel="stylesheet" href="css/nativedroid2.css" />
-		<link rel="stylesheet" href="css/style.css"
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	</head>
-	<body onload="onLoad();"> 
-		<div data-role="page">
-			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Hidratado</h1>
-				<!--Menu -->
-				<ul data-role="nd2tabs" data-swipe="true">
-					<li data-tab="copos">Copos</li>
-					<li data-tab="conquistas">Conquistas</li>
-					<li data-tab="perfil" data-tab-active="true">Perfil</li>
-				</ul>
-			</div>
-			<div role="main" class="ui-content" data-inset="false">
-				<div data-role="nd2tab" data-tab="copos">
-					
-					<div class="row">
-						<div id="container-copos">
-							<div class="cups">
-						
+<head>
+	<title>Conquistas</title>
+	<link rel="icon" href="img/Icon.png">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+	<link rel="stylesheet" href="vendor/wow/animate.css" />
+	<link rel="stylesheet" href="css/nativedroid2.color.cyan.css" />
+	<link rel="stylesheet" href="css/nativedroid2.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
+
+<body onload="onLoad();">
+	<div data-role="page">
+		<div data-role="header" data-position="fixed" class="wow fadeInDown clr-bg-cyan" data-wow-delay="0.2s">
+			<h1 class="wow fadeIn" class="clr-bg-cyan" data-wow-delay='0.4s'>Hidratado</h1>
+			<!--Menu -->
+			<ul data-role="nd2tabs" class="clr-bg-cyan" data-swipe="true">
+				<li data-tab="copos" data-tab-active="true">Copos</li>
+				<li data-tab="conquistas">Conquistas</li>
+				<li data-tab="perfil">Perfil</li>
+			</ul>
+		</div>
+		<div role="main" class="ui-content" data-inset="false">
+			<div data-role="nd2tab" data-tab="copos">
+
+				<div class="nd2-card">
+
+					<div class="card-title has-supporting-text">
+						<h3 class="card-primary-title">Copos</h3>
+					</div>
+
+					<div class="card-supporting-text has-action has-title">
+
+						<div class="cups"></div>
+
+					</div>
+
+					<div class="card-action">
+						<div class="row between-xs">
+							<div class="col-xs-12">
+								<div class="box">
+									<a href="#" id="btnAddCopo" class="ui-btn ui-btn-inline">Adicionar copo</a>
+									<a href="#" id="btnRemCopo" class="ui-btn ui-btn-inline">Remover copo</a>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<button id="btnAddCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button">ADICIONAR COPO </button>
-					<button id="btnRemCopo" class="ui-btn ui-btn-inline ui-btn-raised waves-effect waves-button waves-effect waves-button">Remover Copo </button>
+				</div>
 
 
-<br><br><br>
-							<div class="user-status">
-								<img id="user-foto"> <!--Aqui vem a foto status do user via js -->
-								<p id="status">Coloque quantas águas você tomou para saber como está seu corpo! Se você não tomou água hoje, vá pegar um copo agora!</p>
-							</div>
+				<div class="nd2-card">
+
+					<div class="card-title has-supporting-text">
+						<h3 class="card-primary-title">Status</h3>
+					</div>
+
+					<div class="card-media">
+						<center>
+							<img id="user-foto">
+						</center>
+					</div>
+
+					<div class="card-supporting-text">
+						<p id="status">Coloque quantas águas você tomou para saber como está seu corpo! Se você não tomou água hoje, vá pegar um copo agora!</p>
+					</div>
 
 				</div>
+
+
+
+
 			</div>
-		
-					
+		</div>
+
+
 
 		<!-- Tela João Pedro -->
 		<div data-role="nd2tab" data-tab="conquistas">
@@ -56,7 +88,7 @@
 				<h3>Suas conquistas</h3>
 				<!--Popup-->
 				<!--Primeira Gota!-->
-				<div data-role="popup" id="popup1gota">
+				<div data-role="popup" id="popup1gota" class="popup">
 					<div data-role="header">
 						<h3 class='nd-title'>Primeira Gota!</h3>
 					</div>
@@ -69,26 +101,25 @@
 				</div>
 				<!--Primeira Gota!-->
 
-				<!--Precisão-->
-				<div data-role="popup" id="popupprecisao">
+				<!--Piscina-->
+				<div data-role="popup" id="popuppiscina" class="popup">
 					<div data-role="header">
-						<h3 class='nd-title'>Precisão</h3>
+						<h3 class='nd-title'>Piscina</h3>
 					</div>
 
 					<div data-role="content">
-						<img src="img/iconclock.png">
+						<img src="img/iconpiscina.png">
 
-						<p>Você se manteve hidratado o dia inteiro!</p>
+						<p>Você bebeu 1000 Litros! Parabéns!!!!</p>
 					</div>
 				</div>
-				<!--Precisão-->
+				<!--Piscina-->
 
-					<!--Garrafa-->
-					<div data-role="popup" id="popupgarrafa">
-						<div data-role="header">
-							<h3 class='nd-title'>Garrafa</h3>
-
-						</div>
+				<!--Garrafa-->
+				<div data-role="popup" id="popupgarrafa" class="popup">
+					<div data-role="header">
+						<h3 class='nd-title'>Garrafa</h3>
+					</div>
 
 					<div data-role="content">
 						<img src="img/iconbottle.png">
@@ -99,7 +130,7 @@
 				<!--Garrafa-->
 
 				<!--Balde-->
-				<div data-role="popup" id="popupbalde">
+				<div data-role="popup" id="popupbalde" class="popup">
 					<div data-role="header">
 						<h3 class='nd-title'>Balde d'água</h3>
 					</div>
@@ -112,35 +143,83 @@
 				</div>
 				<!--Balde-->
 
+				<!--Galao-->
+				<div data-role="popup" id="popupgalao" class="popup">
+					<div data-role="header">
+						<h3 class='nd-title'>Galão d'água</h3>
+					</div>
+
+					<div data-role="content">
+						<img src="img/icongalao.png">
+
+						<p>Você já bebeu 20 litros de água!</p>
+					</div>
+				</div>
+				<!--Galao-->
+				<!--Banheira-->
+				<div data-role="popup" id="popubanho" class="popup">
+					<div data-role="header">
+						<h3 class='nd-title'>Banheira</h3>
+					</div>
+
+					<div data-role="content">
+						<img src="img/iconbanheira.png">
+
+						<p>Você já bebeu 120 litros de água!</p>
+					</div>
+				</div>
+				<!--Banheira-->
+
 				<!--Popup-->
 
 				<!--Conquistas-->
 
 				<div class="row icons">
-					<div class="col-xs-2">
+
+					<!--Primeira Gota!-->
+					<div class="col-xs-4 block" id="1gota">
 
 						<a href="#popup1gota" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/icongota.png" id="1gota">
-							</a>
+							<img src="img/icongota.png">
+						</a>
 					</div>
-					<div class="col-xs-2">
 
-						<a href="#popupprecisao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/iconclock.png" id="precisao">
-							</a>
-					</div>
-					<div class="col-xs-2">
+					<!--Garrafa-->
+					<div class="col-xs-4 block" id="garrafa">
 
 						<a href="#popupgarrafa" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/iconbottle.png" id="garrafa">
-							</a>
+							<img src="img/iconbottle.png">
+						</a>
 					</div>
 
-					<div class="col-xs-2">
+					<!--Balde-->
+					<div class="col-xs-4 block" id="balde">
 
 						<a href="#popupbalde" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
-								<img src="/img/iconbalde.png" id="balde">
-							</a>
+							<img src="img/iconbalde.png">
+						</a>
+					</div>
+
+					<!--Galao-->
+					<div class="col-xs-4 block" id="galao">
+
+						<a href="#popupgalao" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+							<img src="img/icongalao.png">
+						</a>
+					</div>
+					<!--Banheira-->
+					<div class="col-xs-4 block" id="banho">
+						<a href="#popubanho" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+							<img src="img/iconbanheira.png">
+						</a>
+					</div>
+
+					<!--Piscina-->
+					<div class="col-xs-4 block" id="piscina">
+
+						<a href="#popuppiscina" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">
+							<img src="img/iconpiscina.png">
+						</a>
 					</div>
 
 				</div>
@@ -155,7 +234,9 @@
 
 		<div data-role="nd2tab" data-tab="perfil">
 
-			<h6 class="nd2-title" id="title-cards">Saiba como anda seu corpo de acordo com a quantidade de água que você tomou hoje.</h6>
+			<div id="title-cards">
+				<h6 class="nd2-title">Saiba como anda seu corpo de acordo com a quantidade de água que você tomou hoje.</h6>
+			</div>
 			<!--card 1-->
 			<div class="nd2-card">
 				<div class="card-title has-supporting-text">
@@ -184,7 +265,7 @@
 
 				<div class="card-supporting-text has-action has-title" id="texto-rim"></div>
 			</div>
-				<!--fim do card 3-->
+			<!--fim do card 3-->
 
 			<!--card 4-->
 			<div class="nd2-card">
@@ -199,19 +280,20 @@
 		</div>
 		<!--fim da tela isa-->
 
-	<!--fim do data role page-->
+		<!--fim do data role page-->
 	</div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/jquery.mobile.min.js"></script>
-<script src="vendor/waves/waves.min.js"></script>
-<script src="vendor/wow/wow.min.js"></script>
-<script src="js/nativedroid2.js"></script>
-<script src="nd2settings.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
-<script src="js/controller.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+	<script src="vendor/waves/waves.min.js"></script>
+	<script src="vendor/wow/wow.min.js"></script>
+	<script src="js/nativedroid2.js"></script>
+	<script src="nd2settings.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="js/controller.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/nativedroid2.color.cyan.css" />
 </body>
 
 </html>
