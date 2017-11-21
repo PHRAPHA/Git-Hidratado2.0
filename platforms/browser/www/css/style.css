@@ -25,9 +25,6 @@
 	-webkit-filter: grayscale(100%);
      pointer-events: none;
 }
-.popup img{
-	align-items: center;
-}
 
 #title-cards {
 	position: relative;
@@ -38,4 +35,5 @@
 .popup img {
 	display: block;
 	margin: auto;
+	margin-bottom: 1.5em;
 }
