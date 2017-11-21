@@ -1,9 +1,19 @@
+function onLoad() {
+	document.addEventListener("deviceready", onDeviceReady, true);
+}
+
+
 $(document).ready(function() {
 	  
 	console.log("Olá Rapha");
 	//Variáveis Contadoras
 	var copos = 0;
 	var contador=0;
+
+	//Local Storage. Nao sei como recuperar informação numa proxima sessao
+	window.localStorage.setItem("qntCopos", copos);
+	copos = window.localStorage.getItem("qntCopos");
+	console.log(window.localStorage.getItem("qntCopos"));
 
 	if (contador >= 0 && contador <= 3) {
 		$("#texto-sangue").html("Seu volume sanguíneo está reduzido e a pressão sanguínea pode cair. A falta de água também prejudica o transporte de nutrientes para outros órgãos.");
@@ -15,11 +25,14 @@ $(document).ready(function() {
 
 	$("#btnAddCopo").click(function() {
 	$(".cups").append( '<img class="copo" src="img/agua.png">');
-	
+
+		
 	//Faz os Copos Sumirem após 9 segundos
 		copos++;
 		contador++;
-		console.log(copos);
+
+	
+
 		setTimeout(function () {
 			$('.copo:last-child').remove();
 			copos--;
