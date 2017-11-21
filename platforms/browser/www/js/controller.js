@@ -14,11 +14,8 @@ $(document).ready(function() {
 	//Variáveis Contadoras
 	var copos = 0;
 	var contador=0;
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 7b2759e2606914f0b60c8c8bdaf9433aee1a2f0c
 	$("#btnAddCopo").click(function() {
 	$(".cups").append( '<img class="copo" src="img/agua.png">');
 	
