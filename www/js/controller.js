@@ -9,11 +9,10 @@ $(document).ready(function() {
 	//Variáveis Contadoras
 	var copos = 0;
 	var contador=0;
+	var conquista=0;
 
 	//Local Storage. Nao sei como recuperar informação numa proxima sessao
-	window.localStorage.setItem("qntCopos", copos);
-	copos = window.localStorage.getItem("qntCopos");
-	console.log(window.localStorage.getItem("qntCopos"));
+
 
 	if (contador >= 0 && contador <= 3) {
 		$("#texto-sangue").html("Seu volume sanguíneo está reduzido e a pressão sanguínea pode cair. A falta de água também prejudica o transporte de nutrientes para outros órgãos.");
@@ -193,27 +192,27 @@ $(document).ready(function() {
 	//If's tela 2!!!1!
 	//Mudar classes 
 	$("#btnAddCopo").click(function() {
+
+			conquista++;
 			
-			if(copos>=1){
+			if(conquista>=1){
 			$("#1gota").removeClass("block");
 			};
-			if(copos>=5){
+			if(conquista>=5){
 			$("#garrafa").removeClass("block");
 			};
-			if(copos>=10){
+			if(conquista>=10){
 			$("#balde").removeClass("block");
 			};
-			if(copos>=15){
+			if(conquista>=15){
 			$("#galao").removeClass("block");
 			};
-			if(copos>=20){
+			if(conquista>=20){
 			$("#banho").removeClass("block");
 			};
-			if(copos>=30){
+			if(conquista>=30){
 			$("#piscina").removeClass("block");
 			};
 		});
 
-
-	
 });
